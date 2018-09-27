@@ -1,0 +1,53 @@
+<HTML><HEAD><TITLE>今日花园 - OZI for Android1.15版中添加航点的方法</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META name=Author content="贺庆生" />
+<META name=KeyWords content="卫星地图,卫星影像,GPS导航仪,今日花园,Maps,MBTiles,OZI,OziExplorer,OruxMaps,OruxWin,WINCE,Android,TIF,GeoTIFF,离线地图,数据包,地图制作教程" />
+<META name=Description content="今日花园Maps苹果IOS系统MBTiles格式离线卫星地图、OruxMaps离线卫星地图、OziExplorer谷歌卫星地图，提供GeoTIFF带坐标信息的卫星地图影像下载、能在Windows系统下运行的OruxMaps软件OruxWin。" />
+<style type="text/css">
+a:link,a:visited{color:red;text-decoration:none}
+a:hover,a:active{color:blue;text-decoration:none}
+</style>
+</HEAD><BODY>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td><img src=../images/bannera.jpg border=0></td></tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#80FFFF height=48><tr>
+<td width=100 align=center><a href=../index.html>首页</a></td>
+<td width=100 align=center><a href=../down.html>GeoTIFF</a></td>
+<td width=100 align=center><a href=../mbtiles.html>今日花园Maps</a></td>
+<td width=100 align=center><a href=../oruxmaps.html>OruxMaps</a></td>
+<td width=100 align=center bgcolor=#ff3400><font color=yellow>OZI</font></td>
+<td width=100 align=center><a href=../Resources.html>资源</a></td>
+<td width=100 align=center><a href=../soft.html>软件</a></td>
+<td width=100 align=center><a href=../our.html>联系</a></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#ff3400 height=32>
+<tr><td>&nbsp;&nbsp;<font color=yellow>当前位置：<a href=../ozi.html style="color:#0053A6">OZI</a> ---> OZI for Android1.15版中添加航点的方法</font></td></tr>
+</table>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<h1 align=center>OZI for Android1.15版中添加航点的方法</h1>
+在OZI for Android1.15版中，要想航点正确地显示汉字，必须设置一下软件的字符集代码页，具体方法是：“主菜单”—>“配置”—>“通常设置”—>“选择数据文件字符集代码页”，选择“Windows CP936 - GBK”项。<br>
+OZI for Android1.15版的航点文件格式如下：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi_and1.jpg" alt="OZI for Android1.15版的航点文件格式"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+在航点文件中，每个航点修改三个位置：<font color='#0080C0'>(1)</font>航点名称，<font color='#0080C0'>(2)</font>纬度坐标，<font color='#0080C0'>(3)</font>经度坐标，其余位置的数据都不用修改。具体数据如下：<br><br>
+<font color='#0080C0'>
+OziExplorer CE Waypoint File Version 1.2<br>
+WGS 84<br>
+Reserved 2<br>
+Reserved 3<br>
+-1,老街,22.547250,114.111217,0.0000000,0,1,3,0,-256,1970-1-1 8:2:52,0,0,0,-777,8,0,17,0,10.0,2,,,<br>
+-1,深圳站,22.533853,114.113384,0.0000000,0,1,3,0,-256,1970-1-1 8:2:52,0,0,0,-777,8,0,17,0,10.0,2,,,<br>
+-1,罗湖,22.528709,114.113642,0.0000000,0,1,3,0,-256,1970-1-1 8:2:52,0,0,0,-777,8,0,17,0,10.0,2,,,<br>
+</font>
+<br>
+<font color='#0080C0'>注意：</font>航点文件的后缀是.wpt。航点文件必须是ASCII字符文件，不能是UTF-8字符文件。用Windows自带的记事本进行编辑就是ASCII字符文件。
+
+</td></tr></table>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center>
+<tr><td bgcolor=#ff3400 align=center><font color=yellow>www.todaygarden.net</font></td></tr>
+<tr><td align=center style="font-size:12px;color:#0053A6"><br>版权所有 2010-2020 今日花园<br>
+<br><br></td></tr>
+</table>
+</body></html>

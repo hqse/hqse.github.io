@@ -1,0 +1,92 @@
+<HTML><HEAD><TITLE>今日花园 - OruxMaps离线地图数据包的安装与使用</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META name=Author content="贺庆生" />
+<META name=KeyWords content="卫星地图,卫星影像,GPS导航仪,今日花园,Maps,MBTiles,OZI,OziExplorer,OruxMaps,OruxWin,WINCE,Android,TIF,GeoTIFF,离线地图,数据包,地图制作教程" />
+<META name=Description content="今日花园Maps苹果IOS系统MBTiles格式离线卫星地图、OruxMaps离线卫星地图、OziExplorer谷歌卫星地图，提供GeoTIFF带坐标信息的卫星地图影像下载、能在Windows系统下运行的OruxMaps软件OruxWin。" />
+<style type="text/css">
+a:link,a:visited{color:red;text-decoration:none}
+a:hover,a:active{color:blue;text-decoration:none}
+</style>
+</HEAD><BODY>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td><img src=../images/bannera.jpg border=0></td></tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#80FFFF height=48><tr>
+<td width=100 align=center><a href=../index.html>首页</a></td>
+<td width=100 align=center><a href=../down.html>GeoTIFF</a></td>
+<td width=100 align=center><a href=../mbtiles.html>今日花园Maps</a></td>
+<td width=100 align=center bgcolor=#ff3400><font color=yellow>OruxMaps</font></td>
+<td width=100 align=center><a href=../ozi.html>OZI</a></td>
+<td width=100 align=center><a href=../Resources.html>资源</a></td>
+<td width=100 align=center><a href=../soft.html>软件</a></td>
+<td width=100 align=center><a href=../our.html>联系</a></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#ff3400 height=32>
+<tr><td>&nbsp;&nbsp;<font color=yellow>当前位置：<a href=../oruxmaps.html style="color:#0053A6">OruxMaps</a> ---> OruxMaps离线地图数据包的安装与使用</font></td></tr>
+</table>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+
+<h1 align=center>OruxMaps离线地图数据包的安装与使用</h1>
+<font color='#0080C0'>注意：</font><br>
+<font color='#0080C0'>1)</font> 一般的安卓手机只支持<font color='#0080C0'>FAT32</font>格式存储卡，<font color='#0080C0'>FAT32</font>格式的存储卡单个文件的大小不能超过<font color='#0080C0'>4G</font>。 <br>
+<font color='#0080C0'>2)</font> 三星Galaxy S3、S4等安卓手机能支持<font color=Fuchsia>exFAT</font>格式的存储卡，<font color=Fuchsia>exFAT</font>格式的存储卡对文件大小没有限制。 <br>
+<font color='#0080C0'>3)</font> 在WINDOWS操作系统的电脑中，Windows XP需要安装补丁才能支持<font color=Fuchsia>exFAT</font>格式，Vista SP1及以后版本都支持<font color=Fuchsia>exFAT</font>格式。<br>
+<font color='#0080C0'>4)</font> 将TF卡放到读卡器中，把读卡器插入支持<font color=Fuchsia>exFAT</font>格式的电脑上，就可以对TF卡进行<font color=Fuchsia>exFAT</font>格式化。如下图所示，文件系统选择<font color=Fuchsia>exFAT</font>，其它默认值。<br><br>
+</td></tr></table>
+<p align=center><img src="../images/exfat.jpg" alt="TF卡exFAT格式化"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>一、OruxMaps离线地图数据包的安装</font><br><br>
+离线地图数据包的安装请按以下几个步骤进行：<br>
+<font color='#0080C0'>1)</font> 将安卓手机用USB数据线与PC电脑连接，然后可以用以下两种方式之中的任何一种方法来管理手机上的文件：<br>
+<font color='#0080C0'>第一种方法：</font>通过第三方软件，比如：豌豆荚手机精灵、360手机助手等来管理手机上的文件。<br>
+<font color='#0080C0'>第二种方法：</font>将手机设置为开发者调试模式，通过WINDOWS资源管理器来管理手机上的文件。将手机设置为开发者调试模式的步骤如下：<br><br>
+</td></tr></table>
+<p align=center><img src="../images/androidset1.jpg" alt="设置为开发者调试模式1"></p><br><br>
+<p align=center><img src="../images/androidset2.jpg" alt="设置为开发者调试模式2"></p><br><br>
+<p align=center><img src="../images/androidset3.jpg" alt="设置为开发者调试模式3"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+
+<font color='#0080C0'>2)</font> 下面以开发者调试模式的方式来介绍地图的安装（通过第三方软件安装地图原理是一样的）。在PC电脑上用WINDOWS资源管理器找到OruxMaps的安装目录，其中mapfiles文件夹就是放置离线地图的默认位置。如下图所示：<br><br>
+</td></tr></table>
+<p align=center><img src="../images/oruxmap1.png" alt="放置OruxMaps离线地图数据包的位置"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>3)</font> 每个OruxMaps离线地图数据包都是以一个文件夹的形式存放的，将离线地图数据包文件夹复制到mapfiles文件夹中。<font color='#0080C0'>注意：</font>文件夹的名称不能改动，否则打不开地图。如下图所示：<br><br>
+</td></tr></table>
+<p align=center><img src="../images/oruxmap2.png" alt="每个OruxMaps离线地图数据包都是以一个文件夹的形式存放的"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>4)</font> 也可以把离线地图的默认安装位置设置到别的地方，例如把离线地图放置到手机的外置TF卡上。<br><br>
+<font color='#0080C0'>注意：安卓4.3以后的版本对外卡有读写权限的限制，所以在高于4.3版本的安卓手机上，也可以将大容量的外置TF卡格式化成内存卡来使用。</font><br><br>
+把离线地图的放置到手机外置TF卡的具体方法是：<br><br>在TF卡上建一个“oruxmaps”文件夹，并在这个“oruxmaps”文件夹中再建一个“mapfiles”文件夹，然后把地图文件夹放到这个“mapfiles”文件夹中。最后把软件中的地图默认路径指向这个“mapfiles”文件夹。修改软件中的地图默认路径的方法如下图所示：<br><br>
+</td></tr></table>
+<p align=center><img src="../images/oruxmap11.png" alt="设置离线地图的存放位置1"></p><br><br>
+<p align=center><img src="../images/oruxmap12b.png" alt="设置离线地图的存放位置2"></p><br><br>
+<p align=center><img src="../images/oruxmap13.png" alt="设置离线地图的存放位置3"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+更改路径参数方法如下图所示： <br><br>
+</td></tr></table>
+<p align=center><img src="../images/oruxmaps5.jpg" alt="更改路径参数方法1"></p><br><br>
+<p align=center><img src="../images/oruxmaps6.jpg" alt="更改路径参数方法2"></p><br><br>
+<p align=center><img src="../images/oruxmaps7.jpg" alt="更改路径参数方法3"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+路径参数更改好后，长按最后一个文件夹名称保存参数，如下图所示： <br><br>
+</td></tr></table>
+<p align=center><img src="../images/oruxmap14.png" alt="设置离线地图的存放位置4"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>二、OruxMaps离线地图数据包的使用</font><br><br>
+在安卓手机上运行OruxMaps程序，按下图中的四步骤调用离线地图：<br>
+</td></tr></table>
+<p align=center><img src="../images/oruxmap3.png" alt="OruxMaps调用离线地图1"></p><br><br>
+<p align=center><img src="../images/oruxmap4.png" alt="OruxMaps调用离线地图2"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>注意</font>：如果你已经在手机上安装了离线地图数据包，但在调用地图时，在离线地图列表中没有看见你安装的离线地图选项，可以将手机关机后重新启动，然后再试试。<br><br>
+<font color='#0080C0'>三、Oruxmaps 导航软件使用说明书下载</font><br><br>
+Oruxmaps 导航软件使用说明书：<a href=http://pan.baidu.com/s/1dDeRTYx target=_blank>Oruxmaps4.4版导航软件使用说明书.rar</a><br>
+<font color='#0080C0'>说明：</font>是V4.4版的使用说明书，现在软件更新后界面都有许多的变化，但基本功能都是相同的，此说明书仅供参考。<br><br>
+</td></tr></table>
+
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center>
+<tr><td bgcolor=#ff3400 align=center><font color=yellow>www.todaygarden.net</font></td></tr>
+<tr><td align=center style="font-size:12px;color:#0053A6"><br>版权所有 2010-2020 今日花园<br>
+<br><br></td></tr>
+</table>
+</body></html>

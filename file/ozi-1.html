@@ -1,0 +1,88 @@
+<HTML><HEAD><TITLE>今日花园 - OziExplorer地图制作教程</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META name=Author content="贺庆生" />
+<META name=KeyWords content="卫星地图,卫星影像,GPS导航仪,今日花园,Maps,MBTiles,OZI,OziExplorer,OruxMaps,OruxWin,WINCE,Android,TIF,GeoTIFF,离线地图,数据包,地图制作教程" />
+<META name=Description content="今日花园Maps苹果IOS系统MBTiles格式离线卫星地图、OruxMaps离线卫星地图、OziExplorer谷歌卫星地图，提供GeoTIFF带坐标信息的卫星地图影像下载、能在Windows系统下运行的OruxMaps软件OruxWin。" />
+<style type="text/css">
+a:link,a:visited{color:red;text-decoration:none}
+a:hover,a:active{color:blue;text-decoration:none}
+</style>
+</HEAD><BODY>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td><img src=../images/bannera.jpg border=0></td></tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#80FFFF height=48><tr>
+<td width=100 align=center><a href=../index.html>首页</a></td>
+<td width=100 align=center><a href=../down.html>GeoTIFF</a></td>
+<td width=100 align=center><a href=../mbtiles.html>今日花园Maps</a></td>
+<td width=100 align=center><a href=../oruxmaps.html>OruxMaps</a></td>
+<td width=100 align=center bgcolor=#ff3400><font color=yellow>OZI</font></td>
+<td width=100 align=center><a href=../Resources.html>资源</a></td>
+<td width=100 align=center><a href=../soft.html>软件</a></td>
+<td width=100 align=center><a href=../our.html>联系</a></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#ff3400 height=32>
+<tr><td>&nbsp;&nbsp;<font color=yellow>当前位置：<a href=../ozi.html style="color:#0053A6">OZI</a> ---> OziExplorer地图制作教程</font></td></tr>
+</table>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+
+<h1 align=center>OziExplorer地图制作</h1>
+下面通过两个步骤来介绍OZI地图的制作：<br>
+<font color='#0080C0'>1)</font> OZI地图格式转换<br>
+<font color='#0080C0'>2)</font> OZI地图经纬度坐标的校准<br><br>
+<font color='#0080C0'>一、OZI地图格式转换</font><br><br>
+这一步很简单，用img2ozf软件将普通的BMP/JPG/GIF/TIF等格式的地图转换成ozf2格式的OZI地图，如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/img2ozf2.jpg" alt="img2ozf软件转换图片格式"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+img2ozf软件转换图片格式的操作顺序如下：<br>
+<font color='#0080C0'>①</font> 选择地图图片所在目录。<br>
+<font color='#0080C0'>②</font> 选择需要转换的地图。<br>
+<font color='#0080C0'>③</font> 点击“转换”按钮，软件自动把所有选上的地图转换成ozf2格式地图，转换后生成的ozf2格式地图与原地图在同一目录中，文件名也与原地图相同，只是文件后缀变成了ozf2。<br><br>
+<font color='#0080C0'>二、OZI地图经纬度坐标的校准</font><br><br>
+OZI地图校准经纬度坐标要用PC电脑版OziExplorer来进行，校准点的经纬度坐标值可以通过谷歌地球(Google Earth)来获取。因为我们制作的谷歌卫星OZI地图与谷歌地球(Google Earth)的地图完全一样，所以可以容易确定地图上某一点的经纬度坐标。<br>
+理论上OZI地图只需要校准两个点的经纬度坐标，就能通过线性算法计算出其他任意点的经纬度坐标。而实际上由于谷歌卫星地图的精度是民用级别的，地图的坐标值都加入了一定的偏差，使得谷歌卫星地图的坐标值不是线性分布的。我们可以通过对OZI地图设置多个校准点的办法来提高地图的精度。OZI地图默认最多设置9个校准点，在极限情况下可以设置30个校准点。<br>
+校准经纬度坐标点的操作顺序如下：<br>
+<font color='#0080C0'>①</font> 运行PC电脑版的OziExplorer软件，通过菜单中的“file(文件)”-->“Load and Calibrate Map Image(载入并矫正地图图像)”把需要校准的ozf2格式地图调入，如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi2.jpg" alt="OziExplorer校准地图坐标1"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>②</font> Map Datum(地图基准)选择 WGS 84 项，Map Projection(地图投影方式)选择 Mercator 项。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi3.jpg" alt="OziExplorer校准地图坐标2"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<font color='#0080C0'>③</font> 点击“Point 1(点1)”标签，然后用鼠标在OZI地图上找一个比较容易辨别位置的地方点一下，校准点①的位置就确定并显示在OZI地图上了。校准点的像素坐标X、Y会自动填写上，而它的经纬度坐标需要我们人工填写。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi4.jpg" alt="OziExplorer校准地图坐标3"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+我们用谷歌地球(Google Earth)来获取校准点的经纬度坐标值，注意OZI校准经纬度坐标用的是“度.十进制分”格式，所以我们也把谷歌地球(Google Earth)的经纬度坐标设置成这种格式，这样便于我们填写校准点的经纬度坐标值。<br>
+谷歌地球(Google Earth)经纬度格式设置方法是：点击菜单中的“工具”-->“选项”，弹出设置对话框，将“显示经度/纬度”设置成“度、十进制分”格式，如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/google2.jpg" alt="谷歌地球参数设置"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+在谷歌地球(Google Earth)上通过辨别地形、建筑、颜色等方法找到我们校准点的位置。用鼠标右键点击窗口左栏的“我的位置”，在弹出的菜单中选择“添加”-->“地标”，在我们找到的校准点位置上添加一个地标。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/google3.jpg" alt="谷歌地球添加地标"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+用鼠标右键点击“地标”，在弹出的菜单中选择“属性”。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/google4.jpg" alt="谷歌地球地标属性"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+在地标属性窗口中有我们需要的校准点的经纬度坐标值。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/google5.jpg" alt="谷歌地球地标坐标值"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+将得到的经纬度坐标值输入到校准点的经纬度输入框中，由于我国处于东经北纬地区，所以在纬度后面选择“N(北纬)”，在经度后面选择“E(东经)”。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi5.jpg" alt="OziExplorer校准地图坐标4"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+用同样的方法对其它的校准点进行设置。OZI软件默认情况下最多可以设置9个校准点。<br>
+当校准点都设置完成后，点击“Save(保存)”按钮，就会生成一个与地图同名但后缀是MAP的经纬度参数文件。如下图所示：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi6.jpg" alt="OziExplorer保存map文件"></p><br><br>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center>
+<tr><td bgcolor=#ff3400 align=center><font color=yellow>www.todaygarden.net</font></td></tr>
+<tr><td align=center style="font-size:12px;color:#0053A6"><br>版权所有 2010-2020 今日花园<br>
+<br><br></td></tr>
+</table>
+</body></html>
