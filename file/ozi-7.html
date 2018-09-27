@@ -1,0 +1,73 @@
+<HTML><HEAD><TITLE>今日花园 - OZI for Android1.15版中添加线路的方法</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META name=Author content="贺庆生" />
+<META name=KeyWords content="卫星地图,卫星影像,GPS导航仪,今日花园,Maps,MBTiles,OZI,OziExplorer,OruxMaps,OruxWin,WINCE,Android,TIF,GeoTIFF,离线地图,数据包,地图制作教程" />
+<META name=Description content="今日花园Maps苹果IOS系统MBTiles格式离线卫星地图、OruxMaps离线卫星地图、OziExplorer谷歌卫星地图，提供GeoTIFF带坐标信息的卫星地图影像下载、能在Windows系统下运行的OruxMaps软件OruxWin。" />
+<style type="text/css">
+a:link,a:visited{color:red;text-decoration:none}
+a:hover,a:active{color:blue;text-decoration:none}
+</style>
+</HEAD><BODY>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td><img src=../images/bannera.jpg border=0></td></tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#80FFFF height=48><tr>
+<td width=100 align=center><a href=../index.html>首页</a></td>
+<td width=100 align=center><a href=../down.html>GeoTIFF</a></td>
+<td width=100 align=center><a href=../mbtiles.html>今日花园Maps</a></td>
+<td width=100 align=center><a href=../oruxmaps.html>OruxMaps</a></td>
+<td width=100 align=center bgcolor=#ff3400><font color=yellow>OZI</font></td>
+<td width=100 align=center><a href=../Resources.html>资源</a></td>
+<td width=100 align=center><a href=../soft.html>软件</a></td>
+<td width=100 align=center><a href=../our.html>联系</a></td>
+</tr></table>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center bgcolor=#ff3400 height=32>
+<tr><td>&nbsp;&nbsp;<font color=yellow>当前位置：<a href=../ozi.html style="color:#0053A6">OZI</a> ---> OZI for Android1.15版中添加线路的方法</font></td></tr>
+</table>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+<h1 align=center>OZI for Android1.15版中添加线路的方法</h1>
+OZI for Android1.15版的线路文件格式如下：<br>
+</td></tr></table>
+<p align=center><img src="../images/ozi_and2.jpg" alt="OZI for Android1.15版的线路文件格式"></p><br><br>
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center><tr><td>
+每条线路都是由多个航点连接而成，所以线路文件中包括了许多航点信息，且每个航点都占一行的位置。四个需要修改的位置是：<br><br>
+<font color='#0080C0'>(1)</font>航点名称<br>
+<font color='#0080C0'>(2)</font>航点纬度坐标<br>
+<font color='#0080C0'>(3)</font>航点经度坐标<br>
+<font color='#0080C0'>(4)</font>标志符，如果标志符为“0”表示这个航点与上一个航点是相连接的，如果为“1”表示这个航点与上一个航点是断开的。通过标志符的运用，可以在一个线路文件中显示多条线路。<br><br>
+具体数据如下：<br><br>
+<font color='#0080C0'>
+H1,OziExplorer CE Route2 File Version 1.0<br>
+H2,WGS 84
+<br>
+H3,17-09-2001 07:45:19,,16711680<br>
+W,W016,  41.0557706,-124.1296491,0<br>
+W,W001,  41.0554327,-124.1298842,0<br>
+W,W015,  41.0550346,-124.1294252,1<br>
+W,W017,  41.0544091,-124.1300438,0<br>
+W,W002,  41.0537392,-124.1303326,0<br>
+W,W018,  41.0539310,-124.1312160,1<br>
+W,W003,  41.0552165,-124.1331799,0<br>
+W,W004,  41.0563290,-124.1336799,0<br>
+W,W019,  41.0564506,-124.1350319,0<br>
+W,W020,  41.0572298,-124.1373305,0<br>
+W,W005,  41.0580014,-124.1373020,0<br>
+W,W006,  41.0587824,-124.1369833,0<br>
+W,W007,  41.0618280,-124.1398482,0<br>
+W,W008,  41.0613246,-124.1409464,0<br>
+W,W009,  41.0592628,-124.1408644,0<br>
+W,W010,  41.0593077,-124.1420304,0<br>
+W,W011,  41.0585349,-124.1420951,0<br>
+W,W012,  41.0584748,-124.1473630,0<br>
+W,W013,  41.0574446,-124.1485762,0<br>
+W,W014,  41.0566532,-124.1475128,0<br>
+<br>
+</font>
+<font color='#0080C0'>注意：</font>线路文件的后缀是.rt2。线路文件必须是ASCII字符文件，不能是UTF-8字符文件。用Windows自带的记事本进行编辑就是ASCII字符文件。
+</td></tr></table>
+
+<table cellspacing=0 cellpadding=0 width=760 border=0 align=center>
+<tr><td bgcolor=#ff3400 align=center><font color=yellow>www.todaygarden.net</font></td></tr>
+<tr><td align=center style="font-size:12px;color:#0053A6"><br>版权所有 2010-2020 今日花园<br>
+<br><br></td></tr>
+</table>
+</body></html>
